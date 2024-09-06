@@ -1,8 +1,6 @@
-package main.java.gyuka08.boeinggame;
-
 import javax.swing.*;
 
-public class BoeingGame {
+public class App {
     public static void main(String[] Akbar) throws Exception {
         int windowWidth = 360;
         int windowHeight = 640;
@@ -14,8 +12,8 @@ public class BoeingGame {
         window.setResizable(false);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        Canvas windowCanvas = new Canvas();
-        window.add(windowCanvas);
+        Body windowBody = new Body();
+        window.add(windowBody);
         window.pack();
         window.setVisible(true);
 
