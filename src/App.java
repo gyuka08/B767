@@ -15,6 +15,7 @@ public class App {
         Body windowBody = new Body();
         window.add(windowBody);
         window.pack();
+        windowBody.requestFocus();
         window.setVisible(true);
 
     }
