@@ -109,8 +109,8 @@ public class Body extends JPanel implements ActionListener, KeyListener {
 
         newYorkImage = new ImageIcon(getClass().getResource("main/resources/assets/Image/spr_newyork.png")).getImage();
         boeingImage = new ImageIcon(getClass().getResource("main/resources/assets/Image/spr_plane.png")).getImage();
-        topBuildingImage = new ImageIcon(getClass().getResource("assets/Image/spr_bottombuilding.png")).getImage();
-        bottomBuildingImage = new ImageIcon(getClass().getResource("assets/Image/spr_topbuilding.png")).getImage();
+        topBuildingImage = new ImageIcon(getClass().getResource("main/resources/assets/Image/spr_bottombuilding.png")).getImage();
+        bottomBuildingImage = new ImageIcon(getClass().getResource("main/resources/assets/Image/spr_topbuilding.png")).getImage();
         roofImage = new ImageIcon(getClass().getResource("main/resources/assets/Image/spr_roof.png")).getImage();
         floorImage = new ImageIcon(getClass().getResource("main/resources/assets/Image/spr_floor.png")).getImage();
 
@@ -239,11 +239,11 @@ public class Body extends JPanel implements ActionListener, KeyListener {
         int textWidth = fontMetrics.stringWidth(scoreText);
         if (gameOver) {
             scoreText = "Game Over: " + String.valueOf((int) score);
-            graphics.drawString(scoreText, (windowWidth - textWidth) / 2, roofHeight + 15);
+            graphics.drawString(scoreText, (windowWidth - textWidth) / 2, roofHeight + 30);
         }
         else {
             scoreText = String.valueOf((int) score);
-            graphics.drawString(scoreText, (windowWidth - textWidth) / 2, roofHeight + 15);
+            graphics.drawString(scoreText, (windowWidth - textWidth) / 2, roofHeight + 30);
         }
     }
 }
